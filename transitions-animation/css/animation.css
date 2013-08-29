@@ -1,0 +1,176 @@
+/* ############ Animation.html CSS ############ */
+	
+body , html {	
+	height:100%;
+}
+
+#animation {
+	background-image: linear-gradient(top, #000000 0%, #5685CD 100%);
+	background-image: -o-linear-gradient(top, #000000 0%, #5685CD 100%);
+	background-image: -moz-linear-gradient(top, #000000 0%, #5685CD 100%);
+	background-image: -webkit-linear-gradient(top, #000000 0%, #5685CD 100%);
+	background-image: -ms-linear-gradient(top, #000000 0%, #5685CD 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #000000),
+		color-stop(1, #5685CD)
+	);
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+#house {
+	background:url(../img/cartoon.png) bottom center no-repeat;
+	width:1024px;
+	height:768px;
+	z-index:100;
+	position:absolute;
+	bottom:-1000px;
+	left:50%;
+	margin-left:-512px;
+}
+#island {
+	height:176px;
+	background:#000;
+	position:absolute;
+	bottom:-1000px;
+	width:100%;
+	z-index:99;
+}
+#house.ani , #island.ani{
+	opacity:1;
+}
+
+#moon-orbit {
+	z-index:2;
+	width:200px;
+	height:900px;
+	position:absolute;
+	left:50%;
+	bottom:200px;
+	margin-left:-100px;
+	-moz-transform:rotate(-90deg);
+	-moz-transform-origin:bottom right;
+	-moz-transition:all 1s ease-in-out;
+
+	-webkit-transform:rotate(-90deg);
+	-webkit-transform-origin: bottom right;
+	-webkit-transition:all 1s ease-in-out;
+}
+#moon {
+	z-index:1;
+	height:200px;
+	width:200px;
+	border-radius:100px;
+	background:#FFF;
+	box-shadow: 0px 0px 100px #FFF;
+	
+	-moz-transition:all 1s ease-in-out;
+	-moz-transform: scale(0.5);
+	
+	-webkit-transition:all 1s ease-in-out;
+	-webkit-transform: scale(0.5);
+
+	opacity:0;
+}
+
+#moon-orbit.ani {
+	height: 500px !important;
+	-moz-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+}
+#moon.ani {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	opacity:1;
+}
+
+.bat {
+	z-index:97;
+	position:absolute;
+	width:22px;
+	height:41px;
+	background:url(../img/bat.png) center left no-repeat;
+	bottom:300px;
+	left:50%;
+	margin-left:-300px;
+	display:none;
+}
+.bat.fly {
+	-moz-transform: rotateX(70deg);	
+	-webkit-transform: rotateX(70deg);	
+}
+
+#cloud,
+#cloud2 {
+	width:1px;
+	height:1px;
+	position:absolute;
+	bottom:580px;
+	left:30%;
+	-moz-transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	z-index:99;
+	opacity:0;
+	-moz-transition:left 2.5s ease-in-out , opacity 1s ease-in-out;
+	-webkit-transition:left 2.5s ease-in-out, opacity 1s ease-in-out;
+}
+#cloud2 {
+	left:65%;
+}
+#cloud.ani {
+	left:55%;
+	opacity:1;
+}
+#cloud2.ani {
+	opacity:1;
+	left:40%;
+}
+#cloud .c,
+#cloud2 .c {
+	width:350px;
+	height: 120px;
+	background: #111;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;	
+	position: absolute;
+	z-index:10;
+}
+#cloud .cl,
+#cloud2 .cl,
+#cloud2 .cr,
+#cloud .cr{
+	display:block;
+	position:absolute;
+	background:#111;
+	z-index:5;
+}
+#cloud .cl ,
+#cloud2 .cl {
+	width:100px;
+	height:100px;
+	top:-50px;
+	left:50px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+#cloud .cr ,
+#cloud2 .cr{
+	width:180px;
+	height:180px;
+	top:-90px;
+	left:120px;
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
+
+/* ############ Animation.html CSS ############ */

@@ -1,0 +1,53 @@
+body , html { height:100%;background:#000;}
+
+ul, ol {margin:0px;padding:0px;}
+ul li,
+ol li {list-style:none;}
+
+#header {position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:9;background:url("../img/overlay.png") repeat;color:#fff;padding-top:40px;}
+#header h1 {width:600px;margin:0 auto;text-indent:-9999px;background:url("../img/logo.png") top center no-repeat;padding:0px;height:165px;border-bottom:solid 1px #575f65;}
+#header h2 {width:1000px;margin:0 auto;padding-top:20px;}
+#header h2 span {display:block;text-align:center;font-family:'italic';font-weight:normal;color:#ee2e24;font-size:25px;}
+#header div {position:absolute;top:20px;left:30px;width:350px;}
+#header div p {font-family:'italic';font-weight:normal;font-size:14px;padding:0;margin:0;}
+#header div p strong {text-transform:uppercase;}
+#header div p em {font-style:normal;}
+#header div p span {color:#8b8d8e;}
+#header .init {display:block;width:373px;height:81px;text-indent:-9999px;background:url("../img/btns.png") 0px 0px no-repeat;position:absolute;bottom:220px;left:50%;margin-left:-186px;}
+
+#demo {padding-bottom:90px;z-index:1;}
+#demo a {position:fixed;width:50%;top:0px;height:100%;text-indent:-9999px;}
+#demo a.next {right:0;}
+#demo a.prev {left:0;}
+#demo li {text-align:center;}
+
+#help {position:fixed;bottom:66px;left:0px;width:100%;z-index:11;}
+#help span {font-family:'italic';font-weight:normal;font-size:14px;color:#FFF;position:absolute;}
+#help span strong {color:#ee2e24;}
+#help span em {display:block;background:url("../img/sets.png") no-repeat;position:absolute;}
+#help div {width:815px;margin: 0 auto;position:relative;}
+
+#help .step-1 {top:-130px;left:-150px;width:250px;height:50px;padding-bottom:56px;}
+#help .step-1 em {width:63px;height:56px;background-position:0px -55px;bottom:0px;left:50%;margin-left:-31px;}
+
+#help .step-2 {top:-280px;left:180px;width:200px;padding-right:50px;height:40px;}
+#help .step-2 em {width:48px;height:55px;background-position:0px 0px;top:50%;right:0px;}
+
+#help .step-3 {top:-60px;left:255px;width:242px;padding-right:20px;height:30px;}
+#help .step-3 em {width:45px;height:39px;background-position:0px -111px;top:10px;right:0px;}
+
+#help .step-4 {top:-150px;right:-30px;width:235px;text-align:right;padding-bottom:75px;height:60px;}
+#help .step-4 em {width:52px;height:73px;background-position:0px -150px;bottom:0px;left:55%;}
+
+#help .step-5 {top:-150px;right:20px;width:150px;text-align:right;padding-bottom:80px;height:60px}
+#help .step-5 em {width:35px;height:78px;background-position:0px -222px;bottom:0px;left:35%;}
+
+#nav {position:fixed;bottom:0px;left:0px;width:100%;height:66px;background:#262626;z-index:10;}
+#nav div {width:815px;margin: 0 auto;padding-top:8px;}
+#nav div a {float:left;height:50px;width:28px;display:block;background:url("../img/btns.png") no-repeat;text-indent:-9999px;}
+#nav a.prev {background-position:0px -170px;}
+#nav a.next {background-position:-28px -170px;}
+#nav select {float:left;width:620px;background:#868686;border:1px #CCC solid;border-radius:5px;padding:5px;font-size:20px;color:#464646;margin:5px 50px;}
+#nav .help {display:block;position:absolute;top:12px;left:10px;background:url("../img/btns.png") 0px -125px no-repeat;width:45px;height:45px;text-indent:-9999px;}
+#nav .help.off {display:none;}
+#nav .download {display:block;position:absolute;top:12px;right:10px;background:url("../img/btns.png") 0px -81px no-repeat;width:166px;height:44px;text-indent:-9999px;}

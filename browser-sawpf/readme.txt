@@ -1,0 +1,1 @@
+Alteração no sawpf para pegar somente IE9 pra cima, não sugerindo o IE como browser.

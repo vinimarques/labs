@@ -1,0 +1,3 @@
+$(function(){
+	Slider = new Slider();
+});
